@@ -26,7 +26,7 @@ public class Person {
     @Column
     private String mail;
 
-    @OneToOne(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToOne(mappedBy = "person", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private User user;
 
     public Person() {

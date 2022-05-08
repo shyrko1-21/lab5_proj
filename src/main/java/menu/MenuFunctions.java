@@ -272,7 +272,7 @@ public class MenuFunctions {
     private boolean getCompanyId(String id) {
         boolean isAppropriateNumber = false;
         //   if (Validator.correctId(id)) {
-        if (!(Integer.parseInt(id) < 0) && !(Integer.parseInt(id) > getCompanies().size())) {
+        if (!(Integer.parseInt(id) < 0)) {
             isAppropriateNumber = true;
         }
         else {
